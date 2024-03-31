@@ -1,0 +1,4 @@
+[2024-03-31 14:01:10] local.ERROR: syntax error, unexpected token "}", expecting variable {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): syntax error, unexpected token \"}\", expecting variable at C:\\Users\\Kemal Crisannaufal\\Documents\\Kuliah\\Semester 6\\ABP-MODUL\\to-do-list-app\\app\\Models\\Task.php:13)
+[stacktrace]
+#0 {main}
+"} 
