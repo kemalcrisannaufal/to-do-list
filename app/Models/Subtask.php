@@ -11,9 +11,14 @@ class Subtask extends Model
 
     protected $fillable = [
         'task_id',
-        'name',
+        'title',
         'description',
         'due_date',
         'status',
     ];
+
+    public function task()
+    {
+        return $this->belongsTo(Task::class, 'task_id', 'id');
+    }
 }

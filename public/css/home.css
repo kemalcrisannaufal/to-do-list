@@ -1,0 +1,82 @@
+h5, i, a {
+    margin: 0;
+    padding: 0;
+}
+
+.add-task {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #194050;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.add-task:hover {
+    background: #203a43;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-add-task:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.main-task {
+    margin-top: 1rem;
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 1rem;
+    background: #194050;
+}
+
+.task {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    border: solid 1px white;
+    justify-content: space-between;
+}
+
+.subtask {
+    display: none;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    border: solid 1px white;
+    padding: 1rem;
+    background: #194050;
+}
+
+.btn-action, .btn-action-subtask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    font-size: 13px;
+    margin-left: 1rem;
+    border: solid 1px white;
+    padding: 0.5rem;
+    background: #203a43;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn-action-subtask {
+    width: 50px;
+    font-size: 15px;
+}
+
+.btn-action:hover {
+    color: white;
+    background-color: #194050;
+}
+
+.btn-action i {
+    margin-right: 0.5rem;
+}
+
+i {
+    cursor: pointer;
+}

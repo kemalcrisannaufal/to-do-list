@@ -1,0 +1,35 @@
+body {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+.add-task {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid white;
+    margin-top: 1rem;
+    border-radius: 5px;
+    background: #203a43;
+}
+
+.label {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.btn-add {
+    width: 15%;
+    padding: 10px;
+    border: 1px solid white;
+    margin-top: 1rem;
+    border-radius: 5px;
+    background: #528495;
+    color: white;
+}
+
+
+i, h5 {
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,40 @@
+body {
+    color: white;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+.left-side {
+    background: #194050;
+    height: 100vh;
+    border-right: 1px solid white;
+    padding: 2rem;
+}
+
+.main-side {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    height: 100vh;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 1.5rem;
+}
+
+a, ul {
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+li i {
+    font-size: 20px;
+    margin-right: 1rem;
+    width: 1rem;
+}
+
+ul div {
+    display: flex;
+    align-items: center;
+}

@@ -16,7 +16,8 @@ return new class extends Migration
             $table->unsignedBigInteger('task_id');
             $table->string('title');
             $table->text('description');
-            $table->dateTime('due_date');
+            $table->string('status')->default('incomplete');
+            $table->date('due_date');
             $table->timestamps();
 
             $table->foreign('task_id')->references('id')->on('tasks')->onDelete('cascade');
