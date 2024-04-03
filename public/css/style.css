@@ -5,14 +5,14 @@ body {
 
 .left-side {
     background: #194050;
-    height: 100vh;
+    min-height: 100vh;
     border-right: 1px solid white;
     padding: 2rem;
 }
 
 .main-side {
     background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-    height: 100vh;
+    height: 300vh;
 }
 
 li {

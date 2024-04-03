@@ -22,7 +22,7 @@
             </div>
 
             <ul>
-                <div><li><i class="fa fa-user"></i><a href="">Profile</a></li></div>
+                <div><li><i class="fa fa-user"></i><a href="/profile">Profile</a></li></div>
                 <div><li><i class="fa fa-home"></i><a href="/">Dashboard</a></li></div>
                 <div><li><i class="fa fa-sign-out"></i><a href="/logout">Logout</a></li></div>
             </ul>

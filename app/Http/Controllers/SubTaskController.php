@@ -31,4 +31,15 @@ class SubTaskController extends Controller
         $subTask->delete();
         return redirect('/');
     }
+
+    public function update($id)
+    {
+        $subTask = Subtask::findOrFail($id);
+
+        $subTask->update([
+            'status' => 'complete',
+        ]);
+        return redirect('/');
+
+    }
 }

@@ -34,4 +34,13 @@ class TaskController extends Controller
         $task->delete();
         return redirect('/');
     }
+
+    public function update($id)
+    {
+        $task = Task::findOrFail($id);
+        $task->update([
+            'status' => 'complete',
+        ]);
+        return redirect('/');
+    }
 }
