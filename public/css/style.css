@@ -20,7 +20,7 @@ li {
     margin-bottom: 1.5rem;
 }
 
-a, ul {
+a, ul, li {
     color: white;
     text-decoration: none;
     margin: 0;
@@ -37,4 +37,18 @@ li i {
 ul div {
     display: flex;
     align-items: center;
+}
+
+.side-nav {
+    padding: 15px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+a:hover, .side-nav:hover {
+    cursor: pointer;
+    color: white;
+    background: #203a43;
+    border-radius: 5px;
 }

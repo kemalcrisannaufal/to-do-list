@@ -68,9 +68,9 @@ h5, i, a {
     font-size: 15px;
 }
 
-.btn-action:hover {
-    color: white;
+.btn-action:hover, .btn-action-subtask:hover {
     background-color: #194050;
+    opacity: 0.8;
 }
 
 .btn-action i {

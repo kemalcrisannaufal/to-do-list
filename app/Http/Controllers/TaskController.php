@@ -10,7 +10,7 @@ class TaskController extends Controller
 {
     public function index()
     {
-        $task = Task::with('subtasks')->get();
+        $task = Task::with(['subtasks', 'user'])->get();
         return view('dashboard', ['tasks' => $task]);
     }
 
@@ -21,6 +21,12 @@ class TaskController extends Controller
 
     public function store(Request $request)
     {
+        $validated = $request->validate([
+            'title' => 'required|max:50',
+            'description' => 'required|max:100',
+            'due_date' => 'required',
+        ]);
+
         $task = new Task();
         $task = $task->fill($request->all());
         $task->user_id = auth()->user()->id;

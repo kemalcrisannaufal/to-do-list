@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class UserController extends Controller
 {
@@ -17,7 +18,6 @@ class UserController extends Controller
 
     public function edit($id)
     {
-
         $user_data = User::findOrFail($id);
         return view('profile.edit', [
             'user_data' => $user_data,
@@ -26,6 +26,14 @@ class UserController extends Controller
 
     public function update(Request $request, $id)
     {
+        // dd($request->all());
+        $validated = $request->validate([
+            'name' => 'required|max:50',
+            'email' => 'required|max:75',
+            'photo' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'phone' => 'required|max:15',
+            'address' => 'required|max:100',
+        ]);
 
         $user = User::findOrFail($id);
         $fileName = $request->photo;

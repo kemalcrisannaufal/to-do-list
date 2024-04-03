@@ -22,9 +22,9 @@
             </div>
 
             <ul>
-                <div><li><i class="fa fa-user"></i><a href="/profile">Profile</a></li></div>
-                <div><li><i class="fa fa-home"></i><a href="/">Dashboard</a></li></div>
-                <div><li><i class="fa fa-sign-out"></i><a href="/logout">Logout</a></li></div>
+                <div class="side-nav"><li><i class="fa fa-user"></i><a href="/profile">Profile</a></li></div>
+                <div class="side-nav"><li><i class="fa fa-home"></i><a href="/">Dashboard</a></li></div>
+                <div class="side-nav"><li><i class="fa fa-sign-out"></i><a href="/logout">Logout</a></li></div>
             </ul>
         </div>
 

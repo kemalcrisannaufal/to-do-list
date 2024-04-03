@@ -18,6 +18,15 @@ class SubTaskController extends Controller
 
     public function store(Request $request, $id)
     {
+
+        $validated = $request->validate([
+            'title' => 'required|max:50',
+            'description' => 'required|max:100',
+            'due_date' => 'required',
+        ]);
+
+
+        $request->session()->flash('success', 'Subtask created successfully');
         $subTask = new Subtask();
         $subTask->fill($request->all());
         $subTask->task_id = $id;
