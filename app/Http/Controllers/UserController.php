@@ -36,7 +36,7 @@ class UserController extends Controller
         ]);
 
         $user = User::findOrFail($id);
-        $fileName = $request->photo;
+        $fileName = $user->photo;
         if ($request->hasFile('photo')) {
             $extension = $request->file('photo')->getClientOriginalExtension();
             $fileName = $request->name.'-'. now()->timestamp . '.' . $extension;
