@@ -25,8 +25,6 @@ class SubTaskController extends Controller
             'due_date' => 'required',
         ]);
 
-
-        $request->session()->flash('success', 'Subtask created successfully');
         $subTask = new Subtask();
         $subTask->fill($request->all());
         $subTask->task_id = $id;
